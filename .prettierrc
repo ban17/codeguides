@@ -3,6 +3,7 @@
   "printWidth": 80,
   "useTabs": false,
   "singleQuote": true,
+  "jsxSingleQuote": false,
   "requirePragma": false,
   "insertPragma": false,
   "semi": false

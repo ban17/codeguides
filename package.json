@@ -56,12 +56,12 @@
   "lint-staged": {
     "src/**/*.{js,jsx}": [
       "npm run lint:js",
-      "prettier --write",
+      "npm run format",
       "git add"
     ],
     "src/**/*.scss": [
       "npm run lint:css",
-      "prettier --write",
+      "npm run format",
       "git add"
     ]
   },
