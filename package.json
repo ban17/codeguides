@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
+    "lint:scss:fix": "stylelint 'src/**/*.scss' --syntax scss --fix",
+    "lint:js": "eslint 'src/**/*.{js,jsx}'",
+    "lint:js:fix": "npm run lint:js -- --fix"
   },
   "repository": {
     "type": "git",
@@ -28,8 +32,8 @@
     "eslint": "^6.8.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "husky": "^2.4.1",
-    "lint-staged": "^10.0.0",
+    "husky": "^2.7.0",
+    "lint-staged": "^10.0.3",
     "prettier": "^1.19.1",
     "prettier-standard": "^16.1.0",
     "stylelint": "^13.0.0",
@@ -40,7 +44,23 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
+    "eslint-plugin-react": "^7.18.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run lint:js --fix",
+      "git add"
+    ],
+    "src/**/*.scss": [
+      "stylelint --syntax scss --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
