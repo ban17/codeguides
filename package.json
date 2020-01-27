@@ -54,10 +54,12 @@
   "lint-staged": {
     "src/**/*.{js,jsx}": [
       "npm run lint:js --fix",
+      "prettier --write",
       "git add"
     ],
     "src/**/*.scss": [
       "stylelint --syntax scss --fix",
+      "prettier --write",
       "git add"
     ]
   },
