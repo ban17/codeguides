@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-rational-order"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "unit-whitelist": ["em", "rem", "s"],
+    "no-descending-specificity": null,
+    "max-nesting-depth": [
+      2,
+      {
+        "ignore": ["blockless-at-rules", "pseudo-classes"],
+        "message": "Please use max 2 nesting levels",
+        "severity": "warning"
+      }
+    ]
+  }
+}

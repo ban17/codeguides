@@ -1,0 +1,9 @@
+{
+  "editorconfig": true,
+  "printWidth": 80,
+  "useTabs": false,
+  "singleQuote": true,
+  "requirePragma": false,
+  "insertPragma": false,
+  "semi": false
+}
