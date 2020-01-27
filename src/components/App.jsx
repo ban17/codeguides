@@ -4,7 +4,7 @@ const App = () => {
   const [isOpen, changeIsOpen] = useState(false)
 
   return (
-    <div className="app">
+    <div className="code-guides-app">
       <h1>Code Guides App</h1>
       <button onClick={() => changeIsOpen(!isOpen)}>
         {isOpen ? 'Hide current year' : 'Show current year'}
