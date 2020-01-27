@@ -38,6 +38,10 @@
       "error",
       "single"
     ],
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
     "semi": [
       "error",
       "never"
@@ -59,17 +63,15 @@
       }
     ],
     "import/newline-after-import": "error",
-    // TODO should be enabled. find solution to resolve imports with aliases
     "import/no-unresolved": "error"
   },
   "settings": {
     "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"],
-        "moduleDirectory": ["node_modules", "src/"],
-        "alias": {
-          "@/components": "./src/components"
-        }
+      "alias": {
+        "map": [
+          ["@/components", "./src/components"]
+        ],
+        "extensions": [".ts", ".js", ".jsx", ".json"]
       }
     }
   }
