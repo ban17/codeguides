@@ -7,6 +7,9 @@ exports[`App should render App component 1`] = `
   <h1>
     Code Guides App
   </h1>
+  <h4>
+    some text
+  </h4>
   <button
     onClick={[Function]}
   >

@@ -18,3 +18,12 @@ for css files: `npm run lint:css`
 ### Prettier
 
 Run `npm run format` for code formatting. The script will be run with each commit, also.
+#
+### Testing
+`npm test`
+ 
+watch: `npm run test:watch`
+ 
+update snapshots: `npm run test:update`
+
+coverage: `npm run test:coverage`

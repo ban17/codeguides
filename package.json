@@ -6,6 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:update": "jest --updateSnapshot",
+    "test:coverage": "jest --collectCoverage",
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
     "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
