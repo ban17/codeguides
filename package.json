@@ -55,13 +55,13 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "npm run lint:js",
       "npm run format",
+      "npm run lint:js",
       "git add"
     ],
     "src/**/*.scss": [
-      "npm run lint:css",
       "npm run format",
+      "npm run lint:css",
       "git add"
     ]
   },
