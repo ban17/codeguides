@@ -15,12 +15,10 @@
     "window": true,
     "document": true
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    "jsx": true,
+    "useJSXTextNode": true
   },
   "plugins": [
     "react"
@@ -71,7 +69,7 @@
         "map": [
           ["@/components", "./src/components"]
         ],
-        "extensions": [".ts", ".js", ".jsx", ".json"]
+        "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
       }
     }
   }

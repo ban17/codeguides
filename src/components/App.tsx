@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const App = () => {
+const App: React.FC = () => {
   const [isOpen, changeIsOpen] = useState(false)
 
   return (
