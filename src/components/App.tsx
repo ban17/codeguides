@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const App: React.FC = () => {
-  const [isOpen, changeIsOpen] = useState(false)
+  const [isOpen, changeIsOpen] = useState<boolean>(false)
 
   return (
     <div className="code-guides-app">
