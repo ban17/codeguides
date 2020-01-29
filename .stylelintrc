@@ -7,7 +7,7 @@
     "stylelint-order"
   ],
   "rules": {
-    "unit-whitelist": ["em", "rem", "s"],
+    "unit-whitelist": ["em", "rem", "s", "%"],
     "no-descending-specificity": null,
     "max-nesting-depth": [
       2,

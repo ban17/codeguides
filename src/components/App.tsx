@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
 import './App.css'
+
+import React, { useState } from 'react'
 
 const App: React.FC = () => {
   const [isOpen, changeIsOpen] = useState<boolean>(false)
