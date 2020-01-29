@@ -1,9 +1,9 @@
-module.exports = ({ file }) => ({
-  parser: file.extname === '.sss' ? 'sugarss' : false,
+module.exports = {
+  parser: false,
   plugins: {
     'postcss-import': {},
     'postcss-preset-env': {},
     'postcss-nested': {},
     cssnano: {}
   }
-})
+}
