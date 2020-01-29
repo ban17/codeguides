@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './App.css'
 
 const App: React.FC = () => {
   const [isOpen, changeIsOpen] = useState<boolean>(false)
@@ -6,7 +7,7 @@ const App: React.FC = () => {
   return (
     <div className="code-guides-app">
       <h1>Code Guides App</h1>
-      <h4>some text</h4>
+      <h4>cool application</h4>
       <button onClick={() => changeIsOpen(!isOpen)}>
         {isOpen ? 'Hide current year' : 'Show current year'}
       </button>

@@ -1,0 +1,44 @@
+.code-guides-app {
+  text-align: center;
+
+  h1 {
+    padding: 2rem 0;
+    color: darkblue;
+    font-weight: bold;
+    background-color: bisque;
+    transition: transform 0.5s ease-in;
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
+
+  h4 {
+    color: red;
+    font-weight: normal;
+    font-family: sans-serif;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+  }
+
+  button {
+    width: 20rem;
+    padding: 0.5rem 0;
+    color: yellow;
+    letter-spacing: 0.2rem;
+    background-color: darkslateblue;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+
+    &:hover {
+      color: white;
+      background-color: darkcyan;
+    }
+  }
+}
