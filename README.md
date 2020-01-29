@@ -15,6 +15,14 @@ for js and jsx files: `npm run lint:js`
 
 for css files: `npm run lint:css`
 #
+**import - sort order:** 
+- `import "./index.css"`: side effect imports (css)
+- `import React from "react"`: packages
+- `import Input from "@/components/Input"`: aliases
+- `import From from "./Form"`: relative
+
+Can be automatically fixed with `npm run lint:js:fix`
+#
 ### Prettier
 
 Run `npm run format` for code formatting. The script will be run with each commit, also.

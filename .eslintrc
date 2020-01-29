@@ -21,7 +21,8 @@
     "useJSXTextNode": true
   },
   "plugins": [
-    "react"
+    "react",
+    "simple-import-sort"
   ],
   "rules": {
     "indent": [
@@ -61,7 +62,8 @@
       }
     ],
     "import/newline-after-import": "error",
-    "import/no-unresolved": "error"
+    "import/no-unresolved": "error",
+    "simple-import-sort/sort": "error"
   },
   "settings": {
     "import/resolver": {
