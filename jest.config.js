@@ -8,6 +8,7 @@ module.exports = {
   snapshotSerializers: ['enzyme-to-json/serializer'],
   setupTestFrameworkScriptFile: '<rootDir>/src/setupEnzyme.ts',
   moduleNameMapper: {
-    '^@/components(.*)$': '<rootDir>/src/components$1'
+    '^@/components(.*)$': '<rootDir>/src/components$1',
+    '\\.(css|sass)$': 'identity-obj-proxy'
   }
 }
