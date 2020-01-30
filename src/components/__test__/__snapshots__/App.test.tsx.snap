@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render App component 1`] = `
+<div
+  className="code-guides-app"
+>
+  <h1>
+    Code Guides App
+  </h1>
+  <h4>
+    cool application
+  </h4>
+  <button
+    onClick={[Function]}
+  >
+    Show current year
+  </button>
+</div>
+`;

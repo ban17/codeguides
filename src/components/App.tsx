@@ -1,3 +1,5 @@
+import './App.css'
+
 import React, { useState } from 'react'
 
 const App: React.FC = () => {
@@ -6,6 +8,7 @@ const App: React.FC = () => {
   return (
     <div className="code-guides-app">
       <h1>Code Guides App</h1>
+      <h4>cool application</h4>
       <button onClick={() => changeIsOpen(!isOpen)}>
         {isOpen ? 'Hide current year' : 'Show current year'}
       </button>
