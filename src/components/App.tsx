@@ -1,20 +1,30 @@
 import './App.css'
 
-import React, { useState } from 'react'
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-const App: React.FC = () => {
-  const [isOpen, changeIsOpen] = useState<boolean>(false)
+import Home from './../pages/Home'
+import NewTutorial from './../pages/NewTutorial'
 
-  return (
+const App: React.FC = () => (
+  <BrowserRouter>
     <div className="code-guides-app">
-      <h1>Code Guides App</h1>
-      <h4>cool application</h4>
-      <button onClick={() => changeIsOpen(!isOpen)}>
-        {isOpen ? 'Hide current year' : 'Show current year'}
-      </button>
-      {isOpen && <h2>{new Date().getFullYear()}</h2>}
+      <header>
+        <h1>Code Guides App</h1>
+      </header>
+
+      <div className="content">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/add-tutorial" component={NewTutorial} />
+        </Switch>
+      </div>
+
+      <footer>
+        <h2>footer {new Date().getFullYear()}</h2>
+      </footer>
     </div>
-  )
-}
+  </BrowserRouter>
+)
 
 export default App

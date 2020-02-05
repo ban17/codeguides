@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewTutorialFrom should be rendered correctly 1`] = `
+<form
+  action="http://localhost:3007/api/tutorials/add"
+  className="new-tutorial-form"
+  method="POST"
+  onSubmit={[Function]}
+>
+  <InputField
+    handleOnChange={[Function]}
+    label="Tutorial name:"
+    name="tutorial-name"
+    value=""
+  />
+  <InputField
+    handleOnChange={[Function]}
+    label="Git repo:"
+    name="url"
+    value=""
+  />
+  <InputField
+    accept="image/*"
+    handleOnChange={[Function]}
+    label="Image:"
+    name="image"
+    type="file"
+  />
+  <InputField
+    handleOnChange={[Function]}
+    label="Tags:"
+    name="tags"
+    value=""
+  />
+  <InputField
+    handleOnChange={[Function]}
+    label="Main category:"
+    name="main-category"
+    value=""
+  />
+  <input
+    type="submit"
+    value="Send"
+  />
+</form>
+`;
