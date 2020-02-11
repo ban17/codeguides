@@ -34,43 +34,12 @@ const NewTutorialForm: React.FC = () => {
   }
 
   return (
-    <form
-      action="http://localhost:3007/api/tutorials/add"
-      method="POST"
-      className="new-tutorial-form"
-      onSubmit={handleSubmit}
-    >
-      <InputField
-        name="tutorial-name"
-        label="Tutorial name:"
-        handleOnChange={handleInputControl}
-        value={inputs['tutorial-name'] || ''}
-      />
-      <InputField
-        name="url"
-        label="Git repo:"
-        handleOnChange={handleInputControl}
-        value={inputs.url || ''}
-      />
-      <InputField
-        name="image"
-        label="Image:"
-        handleOnChange={() => {}}
-        type="file"
-        accept="image/*"
-      />
-      <InputField
-        name="tags"
-        label="Tags:"
-        handleOnChange={handleInputControl}
-        value={inputs.tags || ''}
-      />
-      <InputField
-        name="main-category"
-        label="Main category:"
-        handleOnChange={handleInputControl}
-        value={inputs['main-category']}
-      />
+    <form action="http://localhost:3007/api/tutorials/add" method="POST" className="new-tutorial-form" onSubmit={handleSubmit}>
+      <InputField name="tutorial-name" label="Tutorial name:" handleOnChange={handleInputControl} value={inputs['tutorial-name'] || ''} />
+      <InputField name="url" label="Git repo:" handleOnChange={handleInputControl} value={inputs.url || ''} />
+      <InputField name="image" label="Image:" handleOnChange={() => {}} type="file" accept="image/*" />
+      <InputField name="tags" label="Tags:" handleOnChange={handleInputControl} value={inputs.tags || ''} />
+      <InputField name="main-category" label="Main category:" handleOnChange={handleInputControl} value={inputs['main-category']} />
       <input type="submit" value="Send" />
     </form>
   )

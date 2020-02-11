@@ -1,6 +1,6 @@
 {
   "editorconfig": true,
-  "printWidth": 80,
+  "printWidth": 160,
   "useTabs": false,
   "singleQuote": true,
   "jsxSingleQuote": false,
