@@ -36,7 +36,6 @@ exports[`NewTutorialFrom should be rendered correctly 1`] = `
     handleOnChange={[Function]}
     label="Main category:"
     name="main-category"
-    value=""
   />
   <input
     type="submit"
