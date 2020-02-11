@@ -6,9 +6,13 @@ exports[`App should render App component 1`] = `
     className="code-guides-app"
   >
     <header>
-      <h1>
-        Code Guides App
-      </h1>
+      <Link
+        to="/"
+      >
+        <h1>
+          Code Guides App
+        </h1>
+      </Link>
     </header>
     <div
       className="content"

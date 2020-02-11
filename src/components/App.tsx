@@ -1,16 +1,18 @@
 import './App.css'
 
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
 
-import Home from './../pages/Home'
-import NewTutorial from './../pages/NewTutorial'
+import Home from '@/pages/Home'
+import NewTutorial from '@/pages/NewTutorial'
 
 const App: React.FC = () => (
   <BrowserRouter>
     <div className="code-guides-app">
       <header>
-        <h1>Code Guides App</h1>
+        <Link to="/">
+          <h1>Code Guides App</h1>
+        </Link>
       </header>
 
       <div className="content">

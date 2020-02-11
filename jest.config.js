@@ -9,6 +9,7 @@ module.exports = {
   setupTestFrameworkScriptFile: '<rootDir>/src/setupEnzyme.ts',
   moduleNameMapper: {
     '^@/components(.*)$': '<rootDir>/src/components$1',
+    '^@/pages(.*)$': '<rootDir>/src/pages$1',
     '\\.(css|sass)$': 'identity-obj-proxy'
   }
 }
