@@ -1,19 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App should render App component 1`] = `
-<div
-  className="code-guides-app"
->
-  <h1>
-    Code Guides App
-  </h1>
-  <h4>
-    cool application
-  </h4>
-  <button
-    onClick={[Function]}
+<BrowserRouter>
+  <div
+    className="code-guides-app"
   >
-    Show current year
-  </button>
-</div>
+    <header>
+      <Link
+        to="/"
+      >
+        <h1>
+          Code Guides App
+        </h1>
+      </Link>
+    </header>
+    <div
+      className="content"
+    >
+      <Switch>
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+        />
+        <Route
+          component={[Function]}
+          path="/add-tutorial"
+        />
+      </Switch>
+    </div>
+    <footer>
+      <h2>
+        footer 
+        2020
+      </h2>
+    </footer>
+  </div>
+</BrowserRouter>
 `;

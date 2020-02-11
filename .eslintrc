@@ -69,7 +69,9 @@
     "import/resolver": {
       "alias": {
         "map": [
-          ["@/components", "./src/components"]
+          ["@/components", "./src/components"],
+          ["@/pages", "./src/pages"],
+          ["@/hooks", "./src/hooks"]
         ],
         "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
       }

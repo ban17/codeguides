@@ -10,12 +10,12 @@ describe('App', () => {
 
   it('should show current year on button click', () => {
     const wrapper = mount(<App />)
-    const button = wrapper.find('button')
+    const button = wrapper.find('.test-button')
 
     button.simulate('click')
     wrapper.update()
 
-    expect(wrapper.find('h2').text()).toBe(new Date().getFullYear().toString())
+    expect(wrapper.find('h3').text()).toBe(new Date().getFullYear().toString())
     wrapper.unmount()
   })
 })

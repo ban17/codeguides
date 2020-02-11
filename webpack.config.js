@@ -52,11 +52,16 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      '@/components': path.resolve(__dirname, './src/components')
+      '@/components': path.resolve(__dirname, './src/components'),
+      '@/pages': path.resolve(__dirname, './src/pages'),
+      '@/hooks': path.resolve(__dirname, './src/hooks')
     }
   },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'build')
+  },
+  devServer: {
+    historyApiFallback: true
   }
 }
