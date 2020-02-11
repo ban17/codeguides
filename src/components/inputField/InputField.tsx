@@ -14,7 +14,7 @@ const InputField = ({
       type={type}
       name={name}
       value={value}
-      onChange={e => handleOnChange(e.target.value)}
+      onChange={handleOnChange}
       {...rest}
     />
   </p>

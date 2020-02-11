@@ -70,7 +70,8 @@
       "alias": {
         "map": [
           ["@/components", "./src/components"],
-          ["@/pages", "./src/pages"]
+          ["@/pages", "./src/pages"],
+          ["@/hooks", "./src/hooks"]
         ],
         "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
       }
