@@ -1,25 +1,25 @@
 import './NewTutorialForm.css'
 
 import axios from 'axios'
-import React, { useState } from 'react'
+import React from 'react'
 
 import InputField from '@/components/inputField/InputField'
+import useInputControl from '../../hooks/useInputControl'
 
 const NewTutorialForm: React.FC = () => {
+  const [inputs, handleInputControl] = useInputControl()
   // TODO use one state for all input values somehow xD
-  const [name, changeName] = useState('')
-  const [url, changeUrl] = useState('')
-  const [tags, changeTags] = useState('')
-  const [category, changeCategory] = useState('')
+  // const [name, changeName] = useState('')
+  // const [url, changeUrl] = useState('')
+  // const [tags, changeTags] = useState('')
+  // const [category, changeCategory] = useState('')
 
   const handleSubmit = (e: any) => {
     e.preventDefault()
 
     const data = {
-      tags,
-      url,
-      'tutorial-name': name,
-      'main-category': category
+      tags: inputs.tags,
+      repo: inputs.url
     }
 
     axios({
@@ -51,14 +51,14 @@ const NewTutorialForm: React.FC = () => {
       <InputField
         name="tutorial-name"
         label="Tutorial name:"
-        handleOnChange={changeName}
-        value={name}
+        handleOnChange={handleInputControl}
+        value={inputs['tutorial-name'] || ''}
       />
       <InputField
         name="url"
         label="Git repo:"
-        handleOnChange={changeUrl}
-        value={url}
+        handleOnChange={handleInputControl}
+        value={inputs.url || ''}
       />
       <InputField
         name="image"
@@ -70,14 +70,14 @@ const NewTutorialForm: React.FC = () => {
       <InputField
         name="tags"
         label="Tags:"
-        handleOnChange={changeTags}
-        value={tags}
+        handleOnChange={handleInputControl}
+        value={inputs.tags || ''}
       />
       <InputField
         name="main-category"
         label="Main category:"
-        handleOnChange={changeCategory}
-        value={category}
+        handleOnChange={handleInputControl}
+        value={inputs['main-category']}
       />
       <input type="submit" value="Send" />
     </form>
